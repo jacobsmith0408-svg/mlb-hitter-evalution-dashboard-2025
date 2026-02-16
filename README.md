@@ -9,7 +9,7 @@ View Dashboard Here:
 # Tools Used: 
 - Tableau
 - Statcast Data
-- Python (pulled data from pybaseball)
+- Python (pandas, pybaseball)
 - Data Visualization
 - Baseball Analytics Metrics
 
@@ -19,6 +19,10 @@ View Dashboard Here:
 - Plate Appearances (PA) - sample size indicator
 - LuckGap (wOBA-xwOBA) - difference between actual and expected performance
 - Player Value Score - ranking metric used to evaluate hitters
+- Strikeout Rate (K%) — plate discipline metric
+
+# Data Collection
+- Statcast data was collected using Python and the pybaseball library. Python was used to retrieve player performance metrics including wOBA, xwOBA, strikeout rate, and plate appearances. The processed dataset was then used to build the interactive Tableau dashboard.
 
 # Key Features 
 - Scatter plot comparing expected vs actual performance
