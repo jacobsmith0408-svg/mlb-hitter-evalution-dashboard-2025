@@ -34,21 +34,6 @@ The full data pipeline was built using Python:
 
 All data processing scripts are included in the `src/` directory.
 
-# Repository Structure
-
-mlb-hitter-evalution-dashboard-2025/
-│
-├── src/
-│ ├── pull_statcast_2025.py
-│ ├── build_pa_level_2025.py
-│ ├── build_season_metrics_2025.py
-│ ├── build_player_value_score_2025.py
-│ ├── build_final_player_table_2025.py
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
-
 # Tools Used
 
 - Python
