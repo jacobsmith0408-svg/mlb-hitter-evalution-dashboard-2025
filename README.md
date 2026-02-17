@@ -14,15 +14,49 @@ View Dashboard Here:
 - Baseball Analytics Metrics
 
 # Metrics Used: 
-- wOBA - actual offensive performance
-- xwOBA - expected offense performance based on contact quality
-- Plate Appearances (PA) - sample size indicator
-- LuckGap (wOBA-xwOBA) - difference between actual and expected performance
-- Player Value Score - ranking metric used to evaluate hitters
-- Strikeout Rate (K%) — plate discipline metric
+- wOBA (Weighted On-Base Average)
+- xwOBA (Expected Weighted On-Base Average)
+- Strikeout Rate (K%)
+- Exit Velocity
+- Launch Angle
+- Custom Player Value Score
 
-# Data Collection
-- Statcast data was collected using Python and the pybaseball library. Python was used to retrieve player performance metrics including wOBA, xwOBA, strikeout rate, and plate appearances. The processed dataset was then used to build the interactive Tableau dashboard.
+# Data Pipeline
+
+The full data pipeline was built using Python:
+
+1. Pull Statcast data using PyBaseball
+2. Clean and filter relevant events
+3. Aggregate pitch-level data to plate appearance level
+4. Aggregate plate appearance data to player-level metrics
+5. Calculate custom player value scores
+6. Export processed data for visualization in Tableau
+
+All data processing scripts are included in the `src/` directory.
+
+# Repository Structure
+
+mlb-hitter-evalution-dashboard-2025/
+│
+├── src/
+│ ├── pull_statcast_2025.py
+│ ├── build_pa_level_2025.py
+│ ├── build_season_metrics_2025.py
+│ ├── build_player_value_score_2025.py
+│ ├── build_final_player_table_2025.py
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+
+# Tools Used
+
+- Python
+- PyBaseball
+- Pandas
+- NumPy
+- Tableau
+- Git / GitHub
 
 # Key Features 
 - Scatter plot comparing expected vs actual performance
@@ -41,8 +75,3 @@ This dashboard helps to identify:
 # Project Motivation 
 
 The goal of this project was to apply baseball analytics concepts using Statcast data and build an interactive dashboard capable of supporting player evaluation and decision-making.
-
-# Repository Contents
-- dashboard.twbx — Tableau packaged workbook
-- images/dashboard.png — dashboard screenshot
-- README.md — project documentation
