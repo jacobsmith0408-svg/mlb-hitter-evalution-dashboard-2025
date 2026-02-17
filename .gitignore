@@ -1,0 +1,15 @@
+# environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# data (don't push large datasets)
+data_raw/
+data_processed/
+*.csv
+*.parquet
+*.feather
+*.zip
+*.7z
