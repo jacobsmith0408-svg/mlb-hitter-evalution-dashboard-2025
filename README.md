@@ -2,8 +2,10 @@
 Interactive Tableau dashboard analyzing MLB hitter performance using Statcast data.
 # Dashboard Link: 
 https://public.tableau.com/app/profile/jacob.smith5068/viz/mlb_hitter_eval_2025__twbx/MainDashboard#1
+
 View Dashboard Here:
-<img width="1360" height="613" alt="Screenshot 2026-02-15 at 5 56 39 PM" src="https://github.com/user-attachments/assets/8ee36b5a-bb93-4fd6-acce-672a19c37fce" />
+<img width="1354" height="580" alt="Screenshot 2026-05-08 at 1 32 28 PM" src="https://github.com/user-attachments/assets/e3a0afce-efe6-4a2d-aa7d-0fa1a479a47a" />
+
 
 # Tools Used: 
 - Tableau
